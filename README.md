@@ -1,1 +1,1 @@
-# -intel-edge-AI-S-W
+# [intel] edge AI S/W academy
