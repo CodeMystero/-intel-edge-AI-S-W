@@ -1,5 +1,7 @@
 STM32 CUBE MX settting -> 
 
+  CLock = 84MHz
+
   PC0 ~ PC7 -> GPIO Output (LED On/off, shift)
     GPIO output level = Low
     GPIO mode = Output Push Pull
