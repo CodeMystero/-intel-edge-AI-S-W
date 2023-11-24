@@ -1,0 +1,51 @@
+STM32 CUBE MX settting -> 
+
+  PC0 ~ PC7 -> GPIO Output (LED On/off, shift)
+    GPIO output level = Low
+    GPIO mode = Output Push Pull
+    GPIO Pull-up/Pull-down = No pull-up and no pull-down
+    Maximum output speed = Low
+    User Label = LED0 ~ LED7
+
+  PA6 -> TIM3_CH1 (Moonlight on)
+    CLock Source = Internal Clock 
+    Channel1 = PWM Generation CH1
+    PSC = 0 ( to be modified by code : TIM3->PSC)
+    Counter Mode = Up
+    Counter Period(ARR) = 65535 ( to be modified by code : TIM3->ARR)
+    Internal CLock Division (CKD) = No Division
+    auto-reload preload = Disable 
+
+    PWM Generation Channel 1 
+      Mode  = PWM mode 1
+      Pulse (16 bits value) = 0
+      Output compare preload = Enable
+      Fast Mode = Disable
+      CH Polarity = High
+
+    GPIO Settings = Modified checked 
+    TIM3 global interrupt = Enavled checked
+
+  PA0 -> GPIO analogue (Street Light)
+    DMA2 Stream 0 
+      Mode = Circular
+      NVIC Settings = DMA2 stream0 global interrupt
+
+  PA2, PA3 -> USART_TX/RX (Internal asynchronous transmittion)
+    USART2 global interrupt = Enabled checked
+    Baud Rate = 115200 Bits/s
+    Word Length = 8 Bits (including Parity)
+  PB8, PB7 -> I2C1_SCL/SDA respectively 
+
+  PB6 -> TIM4_CH1 (piano)
+    Internal clock checked
+    PWM Generation CH1
+    NVIC Settings -> TIM4 global interrupt Enabled checked
+    PSC = 0 ( to be modified by code : TIM4->PSC)
+    Counter Mode = Up
+    Counter Period(ARR) = 65535  ( to be modified by code : TIM4->ARR)
+    Internal CLock Division (CKD) = No Division
+    auto-reload preload = Disable 
+
+  
+
