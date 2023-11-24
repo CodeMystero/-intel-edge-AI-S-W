@@ -1,0 +1,11 @@
+STM32 CUBE MX settting -> 
+
+  CLock = 100MHz
+
+PB6 -> TIM4_CH1 (Internal Clcok) 
+      NVIC Settings -> checked
+TIM3->PB15 -> Trigger
+    ->PB14 ->Echo
+    NVIC Settings -> checked
+
+  
