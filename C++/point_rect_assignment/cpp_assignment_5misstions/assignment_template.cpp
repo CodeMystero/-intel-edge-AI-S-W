@@ -23,23 +23,19 @@ T findMax(const T* arr, int size) {
 }
 
 int main() {
-
     int intArray[] = { 3, 7, 1, 9, 4, 6, 8, 2, 5 };
     int size = sizeof(intArray) / sizeof(int);
-
     int maxInt = findMax(intArray, size);
     cout << "정수 배열의 최대값: " << maxInt << endl;
 
  
     double doubleArray[] = { 3.5, 7.2, 1.8, 9.1, 4.6, 6.3, 8.7, 2.4, 5.9 };
     size = sizeof(doubleArray) / sizeof(double);
-
     double maxDouble = findMax(doubleArray, size);
     cout << "실수 배열의 최대값: " << maxDouble << endl;
 
     char charArray[] = { 'a', 't', 'e', 'u', 'ㅣ', 'p', 'o', 'q', 'g'};
     size = sizeof(charArray) / sizeof(char);
-
     char maxChar = findMax(charArray, size);
     cout << "문자 배열의 최후방 문자: " << maxChar << endl;
 
