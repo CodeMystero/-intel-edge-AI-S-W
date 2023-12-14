@@ -1,7 +1,7 @@
 
-TARGET= keypad_v3
+TARGET= keypad
 CC= gcc
-OBJ= keypad_v3.o lcd1602.o
+OBJ= keypad.o lcd_config.o
 LFLAGS= -lwiringPi
 CFLAGS= -c
 
@@ -15,4 +15,4 @@ $(TARGET): $(OBJ)
 
 clean:
         rm -rf *.o $(TARGET)
-~
+
