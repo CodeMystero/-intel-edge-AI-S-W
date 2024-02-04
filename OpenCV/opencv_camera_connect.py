@@ -2,7 +2,7 @@ import cv2
 
 # opencv python 코딩 기본 틀
 # 카메라 영상을 받아올 객체 선언 및 설정(영상 소스, 해상도 설정)
-capture = cv2.VideoCapture(1)
+capture = cv2.VideoCapture(0)
 capture.set(cv2.CAP_PROP_FRAME_WIDTH, 720)
 capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
